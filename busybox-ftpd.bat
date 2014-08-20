@@ -1,0 +1,4 @@
+adb push Z:\busybox\busybox-1.22.1\busybox /system/bin/b2/busybox
+adb shell chmod 777 /system/bin/b2/busybox
+adb shell /system/bin/b2/busybox --install /system/bin/b2
+adb shell /system/bin/b2/tcpsvd 0 21 /system/bin/b2/ftpd -w -vv /mnt/sdcard
